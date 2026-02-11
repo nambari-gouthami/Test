@@ -1,0 +1,238 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Feb 07 06:15:03 UTC 2026</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (510 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Open a mistake question", "Mistakes Page Validation in Abhyas.ai"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user is logged into Abhyas portal&apos; and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;user is logged into Abhyas portal&quot;)
+public void user_is_logged_into_abhyas_portal() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given(&quot;user navigates to Mistakes page&quot;)
+public void user_navigates_to_mistakes_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;user clicks on Mistake question&quot;)
+public void user_clicks_on_mistake_question() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;mistake question details should be shown&quot;)
+public void mistake_question_details_should_be_shown() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.user is logged into Abhyas portal(file:///home/labuser/eclipse-workspace/CAPSTONE_OnlinePortal/src/test/resources/feature/Mistakes.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1052842393", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1052842393'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user is logged into Abhyas portal&apos; and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;user is logged into Abhyas portal&quot;)
+public void user_is_logged_into_abhyas_portal() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given(&quot;user navigates to Mistakes page&quot;)
+public void user_navigates_to_mistakes_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;user clicks on Mistake question&quot;)
+public void user_clicks_on_mistake_question() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;mistake question details should be shown&quot;)
+public void mistake_question_details_should_be_shown() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.user is logged into Abhyas portal(file:///home/labuser/eclipse-workspace/CAPSTONE_OnlinePortal/src/test/resources/feature/Mistakes.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@1ff4931d</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify mistakes list is displayed", "Mistakes Page Validation in Abhyas.ai"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user is logged into Abhyas portal&apos; and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;user is logged into Abhyas portal&quot;)
+public void user_is_logged_into_abhyas_portal() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given(&quot;user navigates to Mistakes page&quot;)
+public void user_navigates_to_mistakes_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;user should see list of mistake questions&quot;)
+public void user_should_see_list_of_mistake_questions() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.user is logged into Abhyas portal(file:///home/labuser/eclipse-workspace/CAPSTONE_OnlinePortal/src/test/resources/feature/Mistakes.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace288919635", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace288919635'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user is logged into Abhyas portal&apos; and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;user is logged into Abhyas portal&quot;)
+public void user_is_logged_into_abhyas_portal() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given(&quot;user navigates to Mistakes page&quot;)
+public void user_navigates_to_mistakes_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;user should see list of mistake questions&quot;)
+public void user_should_see_list_of_mistake_questions() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.user is logged into Abhyas portal(file:///home/labuser/eclipse-workspace/CAPSTONE_OnlinePortal/src/test/resources/feature/Mistakes.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@1ff4931d</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Mistakes page is displayed", "Mistakes Page Validation in Abhyas.ai"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user is logged into Abhyas portal&apos; and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;user is logged into Abhyas portal&quot;)
+public void user_is_logged_into_abhyas_portal() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given(&quot;user navigates to Mistakes page&quot;)
+public void user_navigates_to_mistakes_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;user clicks on Mistakes menu&quot;)
+public void user_clicks_on_mistakes_menu() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;Mistakes page should be visible&quot;)
+public void mistakes_page_should_be_visible() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.user is logged into Abhyas portal(file:///home/labuser/eclipse-workspace/CAPSTONE_OnlinePortal/src/test/resources/feature/Mistakes.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1720797452", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1720797452'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user is logged into Abhyas portal&apos; and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;user is logged into Abhyas portal&quot;)
+public void user_is_logged_into_abhyas_portal() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given(&quot;user navigates to Mistakes page&quot;)
+public void user_navigates_to_mistakes_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;user clicks on Mistakes menu&quot;)
+public void user_clicks_on_mistakes_menu() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;Mistakes page should be visible&quot;)
+public void mistakes_page_should_be_visible() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.user is logged into Abhyas portal(file:///home/labuser/eclipse-workspace/CAPSTONE_OnlinePortal/src/test/resources/feature/Mistakes.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@1ff4931d</td></tr>
+</table><p>
+</body>
+</html>

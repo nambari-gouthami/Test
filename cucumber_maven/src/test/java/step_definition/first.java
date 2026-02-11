@@ -17,15 +17,15 @@ public class first {
 	    driver.manage().window().maximize();
 	   
 	}
-	@Given("user is on google search page")
-	public void user_is_on_google_search_page() {
-	    driver.get("https://www.google.com"); 
+	@Given("user is on demoblaze search page")
+	public void user_is_on_demoblaze_search_page() {
+	    driver.get("https://www.demoblaze.com/"); 
 	}
 	
 
 	@When("user enters a text in search box")
 	public void user_enters_a_text_in_search_box()throws InterruptedException {
-	   driver.findElement(By.name("q")).sendKeys("INDIA");
+	   driver.findElement(By.name("q")).sendKeys("IPHONE");
 	   Thread.sleep(2000);
 	   driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
 	   Thread.sleep(2000);
@@ -36,6 +36,6 @@ public class first {
 public void user_is_navigated_to_search_results() {
 	driver.quit();
 }
-   // driver.get("https://www.google.com");
+   // driver.get("https://www.demoblaze.com");
     
 }
