@@ -1,237 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-07T06:15:03 UTC" name="Default suite" finished-at="2026-02-07T06:15:03 UTC" duration-ms="510">
+  <suite started-at="2026-02-12T05:48:31 UTC" name="Default suite" finished-at="2026-02-12T05:48:53 UTC" duration-ms="21668">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@1ff4931d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:stepdefinitions.TestRunner@1ff4931d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-02-07T06:15:03 UTC" name="Default test" finished-at="2026-02-07T06:15:03 UTC" duration-ms="510">
-      <class name="runner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@1ff4931d]" started-at="2026-02-07T06:15:03 UTC" name="setUpClass" finished-at="2026-02-07T06:15:03 UTC" duration-ms="363" status="PASS">
+    <test started-at="2026-02-12T05:48:31 UTC" name="Default test" finished-at="2026-02-12T05:48:53 UTC" duration-ms="21668">
+      <class name="stepdefinitions.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:stepdefinitions.TestRunner@1ff4931d]" started-at="2026-02-12T05:48:31 UTC" name="setUpClass" finished-at="2026-02-12T05:48:32 UTC" duration-ms="393" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3a0807b7]]>
+                <![CDATA[org.testng.TestRunner@335f5c69]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@1ff4931d]" started-at="2026-02-07T06:15:03 UTC" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-07T06:15:03 UTC" duration-ms="72" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:stepdefinitions.TestRunner@1ff4931d]" started-at="2026-02-12T05:48:32 UTC" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-12T05:48:51 UTC" duration-ms="19627" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify Mistakes page is displayed"]]>
+                <![CDATA["User places an order successfully"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Mistakes Page Validation in Abhyas.ai"]]>
+                <![CDATA["Place Order functionality in Demoblaze"]]>
               </value>
             </param>
           </params>
-          <exception class="io.cucumber.testng.UndefinedStepException">
-            <message>
-              <![CDATA[The step 'user is logged into Abhyas portal' and 3 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("user is logged into Abhyas portal")
-public void user_is_logged_into_abhyas_portal() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("user navigates to Mistakes page")
-public void user_navigates_to_mistakes_page() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("user clicks on Mistakes menu")
-public void user_clicks_on_mistakes_menu() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("Mistakes page should be visible")
-public void mistakes_page_should_be_visible() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'user is logged into Abhyas portal' and 3 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("user is logged into Abhyas portal")
-public void user_is_logged_into_abhyas_portal() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("user navigates to Mistakes page")
-public void user_navigates_to_mistakes_page() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("user clicks on Mistakes menu")
-public void user_clicks_on_mistakes_menu() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("Mistakes page should be visible")
-public void mistakes_page_should_be_visible() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-at ✽.user is logged into Abhyas portal(file:///home/labuser/eclipse-workspace/CAPSTONE_OnlinePortal/src/test/resources/feature/Mistakes.feature:3)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@1ff4931d]" started-at="2026-02-07T06:15:03 UTC" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-07T06:15:03 UTC" duration-ms="8" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify mistakes list is displayed"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Mistakes Page Validation in Abhyas.ai"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.testng.UndefinedStepException">
-            <message>
-              <![CDATA[The step 'user is logged into Abhyas portal' and 2 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("user is logged into Abhyas portal")
-public void user_is_logged_into_abhyas_portal() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("user navigates to Mistakes page")
-public void user_navigates_to_mistakes_page() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("user should see list of mistake questions")
-public void user_should_see_list_of_mistake_questions() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'user is logged into Abhyas portal' and 2 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("user is logged into Abhyas portal")
-public void user_is_logged_into_abhyas_portal() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("user navigates to Mistakes page")
-public void user_navigates_to_mistakes_page() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("user should see list of mistake questions")
-public void user_should_see_list_of_mistake_questions() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-at ✽.user is logged into Abhyas portal(file:///home/labuser/eclipse-workspace/CAPSTONE_OnlinePortal/src/test/resources/feature/Mistakes.feature:3)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@1ff4931d]" started-at="2026-02-07T06:15:03 UTC" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-07T06:15:03 UTC" duration-ms="8" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Open a mistake question"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Mistakes Page Validation in Abhyas.ai"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.testng.UndefinedStepException">
-            <message>
-              <![CDATA[The step 'user is logged into Abhyas portal' and 3 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("user is logged into Abhyas portal")
-public void user_is_logged_into_abhyas_portal() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("user navigates to Mistakes page")
-public void user_navigates_to_mistakes_page() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("user clicks on Mistake question")
-public void user_clicks_on_mistake_question() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("mistake question details should be shown")
-public void mistake_question_details_should_be_shown() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'user is logged into Abhyas portal' and 3 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("user is logged into Abhyas portal")
-public void user_is_logged_into_abhyas_portal() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("user navigates to Mistakes page")
-public void user_navigates_to_mistakes_page() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("user clicks on Mistake question")
-public void user_clicks_on_mistake_question() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("mistake question details should be shown")
-public void mistake_question_details_should_be_shown() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-at ✽.user is logged into Abhyas portal(file:///home/labuser/eclipse-workspace/CAPSTONE_OnlinePortal/src/test/resources/feature/Mistakes.feature:3)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@1ff4931d]" started-at="2026-02-07T06:15:03 UTC" name="tearDownClass" finished-at="2026-02-07T06:15:03 UTC" duration-ms="20" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:stepdefinitions.TestRunner@1ff4931d]" started-at="2026-02-12T05:48:51 UTC" name="tearDownClass" finished-at="2026-02-12T05:48:53 UTC" duration-ms="1615" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- runner.TestRunner -->
+      </class> <!-- stepdefinitions.TestRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
